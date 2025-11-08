@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wisata Daerahku - Beranda</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">WisataDaerahku</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinasi.html">Destinasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="banner mb-5">
+  <div class="container text-white">
+    <h1 class="fw-bold">JELAJAHI KEINDAHAN DAERAH</h1>
+    <p class="lead">Temukan destinasi populer, paket wisata, dan foto-foto inspiratif untuk liburanmu.</p>
+    <div class="mt-3">
+      <a href="destinasi.html" class="btn btn-accent me-2">Lihat Destinasi</a>
+      <a href="kontak.html" class="btn btn-outline-light">Hubungi Kami</a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="search-bar mx-auto shadow" style="max-width:1100px;">
+    <form class="row g-2 align-items-center">
+      <div class="col-md-4">
+        <input class="form-control" placeholder="Cari destinasi (mis. Pantai, Gunung)" />
+      </div>
+      <div class="col-md-3">
+        <input type="date" class="form-control" />
+      </div>
+      <div class="col-md-3">
+        <select class="form-select">
+          <option>Pilih Tipe Transportasi</option>
+          <option>Kendaraan Pribadi</option>
+          <option>Transportasi Umum</option>
+        </select>
+      </div>
+      <div class="col-md-2 text-end">
+        <button class="btn btn-accent w-100">Cari Sekarang</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<section class="container my-5 popular">
+  <h3 class="section-title text-center">DESTINASI POPULER</h3>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card card-rounded shadow-sm">
+        <img src="assets/img/gunung.jpg" class="w-100" alt="">
+        <div class="p-3">
+          <h5>Gunung Rinjani</h5>
+          <p class="text-muted small">Pendakian menantang dengan pemandangan luar biasa.</p>
+          <a href="detail.html" class="btn btn-link">Lihat Detail</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-rounded shadow-sm">
+        <img src="assets/img/pantai.jpg" class="w-100" alt="">
+        <div class="p-3">
+          <h5>Pantai Kuta</h5>
+          <p class="text-muted small">Pantai terkenal dengan ombak dan sunset yang memukau.</p>
+          <a href="detail.html" class="btn btn-link">Lihat Detail</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-rounded shadow-sm">
+        <img src="assets/img/hutan.jpg" class="w-100" alt="">
+        <div class="p-3">
+          <h5>hutan</h5>
+          <p class="text-muted small">hutan lebat dan asri.</p>
+          <a href="detail.html" class="btn btn-link">Lihat Detail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-4"><a class="btn btn-outline-secondary" href="destinasi.html">Lihat Semua Destinasi</a></div>
+</section>
+
+<section class="container my-5">
+  <h3 class="section-title text-center">LIHAT PAKET WISATA KAMI</h3>
+  <div class="row g-3">
+    <div class="col-md-8">
+      <div class="package">
+        <div class="flex-grow-1">
+          <h5 class="mb-2">Pengalaman Liburan Tak Terlupakan</h5>
+          <p class="text-muted small">Paket 3 hari 2 malam mengunjungi pantai-pantai indah dengan itinerary lengkap.</p>
+          <div class="small text-muted">Termasuk: Transport, Guide, Makan</div>
+        </div>
+        <div class="price">
+          <div class="small">Mulai dari</div>
+          <div class="h4">RP 1.500.000</div>
+          <div class="small mt-1"><a href="kontak.html" class="btn btn-sm btn-light">Pesan Sekarang</a></div>
+        </div>
+      </div>
+      <div class="mt-3 package">
+        <div class="flex-grow-1">
+          <h5 class="mb-2">Liburan Musim Panas ke Gua</h5>
+          <p class="text-muted small">Petualangan menyusuri gua dan jelajah alam.</p>
+        </div>
+        <div class="price">
+          <div class="small">Mulai dari</div>
+          <div class="h4">RP 700.000</div>
+          <div class="small mt-1"><a href="kontak.html" class="btn btn-sm btn-light">Pesan Sekarang</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-3 text-center">
+        <h6>Kenapa Memilih Kami?</h6>
+        <p class="small text-muted">Tim lokal berpengalaman, rute teruji, dan harga transparan.</p>
+        <a href="kontak.html" class="btn btn-accent">Hubungi Konsultan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container my-5">
+  <h3 class="section-title text-center">FOTO DARI WISATAWAN</h3>
+  <div class="gallery-grid">
+    <img src="assets/img/gal1.jpg" alt="">
+    <img src="assets/img/gal2.jpg" alt="">
+    <img src="assets/img/gal3.jpg" alt="">
+    <img src="assets/img/gal4.jpg" alt="">
+    <img src="assets/img/gal5.jpg" alt="">
+    <img src="assets/img/gal6.jpg" alt="">
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="text-white">WisataDaerahku</h5>
+        <p class="small text-white-50">Jelajahi destinasi terbaik di daerahmu, temukan paket yang pas dan booking mudah.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-white">Kontak</h6>
+        <div class="small text-white-50">Email: info@wisatadaerahku.id<br>Tel: +62 812 3456 7890</div>
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-white">Newsletter</h6>
+        <div class="input-group">
+          <input class="form-control" placeholder="Masukkan email">
+          <button class="btn btn-accent">Berlangganan</button>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4 small text-white-50">© 2025 Dinas Pariwisata</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

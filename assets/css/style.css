@@ -1,0 +1,64 @@
+
+/* style.css - Navy & White theme */
+:root{
+  --navy:#0b2545;
+  --navy-2:#14385f;
+  --accent:#2b6cb0;
+  --muted:#6c7a89;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+body{
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:#f4f7fb;
+  color:var(--navy);
+  margin:0;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+.navbar{background:var(--navy);}
+.navbar .nav-link{color:rgba(255,255,255,0.9);}
+.navbar .nav-link.active{font-weight:600}
+.banner{
+  height:70vh;
+  background-image: url('assets/img/banner.jpg');
+  background-size:cover;
+  background-position:center;
+  position:relative;
+  color:white;
+  display:flex;
+  align-items:center;
+}
+.banner::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(11,37,69,0.6), rgba(11,37,69,0.6));
+}
+.banner .container{position:relative; z-index:2}
+.banner h1{font-size:3rem; letter-spacing:1px}
+.banner p{opacity:0.95}
+.btn-accent{
+  background:linear-gradient(90deg,var(--accent),#4aa3e0);
+  color:white; border:none; padding:10px 22px; border-radius:30px;
+  box-shadow:0 6px 18px rgba(43,108,176,0.18);
+}
+.search-bar{
+  transform:translateY(40px);
+  background:white; padding:18px; border-radius:12px; box-shadow:0 8px 30px rgba(11,37,69,0.08);
+}
+.card-rounded{border-radius:16px; overflow:hidden}
+.card-rounded img{height:200px; object-fit:cover}
+.section-title{font-weight:700; color:var(--navy); margin-bottom:18px}
+.popular .card{border:none; border-radius:14px}
+.package{display:flex; gap:18px; align-items:center; background:white; padding:20px; border-radius:12px; box-shadow:0 6px 20px rgba(11,37,69,0.04)}
+.package .price{background:var(--navy); color:white; padding:18px; border-radius:12px; min-width:120px; text-align:center}
+.gallery-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+.gallery-grid img{width:100%; height:220px; object-fit:cover; border-radius:12px}
+footer{background:var(--navy-2); color:white; padding:40px 0; margin-top:40px}
+.footer-links a{color:rgba(255,255,255,0.9)}
+@media(max-width:768px){
+  .banner{height:55vh}
+  .banner h1{font-size:2rem}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+}
